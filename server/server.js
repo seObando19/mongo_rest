@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 const app = express();
 
 // parse application/x-www-form-urlencoded
@@ -33,6 +34,14 @@ app.post('/producto', function(req, res) {
     res.json({
         'data': req.body
     });
+});
+mongoose.connect('mongodb://localhost:27017/tienda', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}, (err, res) => {
+    if (err) throw err;
+    console.log('Conectado a la DB');
+
 });
 app.listen(3000, () => {
     console.log("servidor online");
