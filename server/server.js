@@ -41,8 +41,9 @@ mongoose.connect('mongodb://localhost:27017/tienda', {
 }, (err, res) => {
     if (err) throw err;
     console.log('Conectado a la DB');
-
 });
-app.listen(3000, () => {
-    console.log("servidor online");
+
+let port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`servidor online en el puerto ${port}`);
 });

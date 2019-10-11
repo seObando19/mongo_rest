@@ -1,32 +1,33 @@
 {
-  "name": "mongo_rest",
-  "version": "1.0.0",
-  "description": "Mongo DB y  Rest",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/seObando19/mongo_rest.git"
-  },
-  "keywords": [
-    "node",
-    "nodejs",
-    "mongo",
-    "mongodb",
-    "rest"
-  ],
-  "author": "Sebastian Obando",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/seObando19/mongo_rest/issues"
-  },
-  "homepage": "https://github.com/seObando19/mongo_rest#readme",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.7.4",
-    "nodemon": "^1.19.3"
-  }
+    "name": "mongo_rest",
+    "version": "1.0.0",
+    "description": "Mongo DB y  Rest",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server/server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/seObando19/mongo_rest.git"
+    },
+    "keywords": [
+        "node",
+        "nodejs",
+        "mongo",
+        "mongodb",
+        "rest"
+    ],
+    "author": "Sebastian Obando",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/seObando19/mongo_rest/issues"
+    },
+    "homepage": "https://github.com/seObando19/mongo_rest#readme",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "mongoose": "^5.7.4",
+        "nodemon": "^1.19.3"
+    }
 }
